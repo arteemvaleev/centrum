@@ -1,0 +1,488 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+   <meta charset="UTF-8">
+   <meta http-equiv="X-UA-Compatible" content="IE=edge">
+   <meta name="viewport" content="width=device-width, initial-scale=1.0">
+   <link rel="preconnect" href="https://fonts.googleapis.com">
+   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+   <link href="https://fonts.googleapis.com/css2?family=Open+Sans:ital,wght@0,400;0,600;0,700;1,400&display=swap&_v=20221109231918"
+      rel="stylesheet">
+   <link rel="stylesheet" href="//code.jquery.com/ui/1.13.2/themes/base/jquery-ui.css?_v=20221109231918">
+   <link rel="stylesheet" href="css/style.min.css?_v=20221109231918">
+   <title>Listing</title>
+</head>
+
+<body>
+   <header class="header">
+   <div class="container">
+      <div class="header__top top-header">
+         <div class="top-header__menu menu-top">
+            <a class="menu-top__logo" href="index.html">
+               <picture><source srcset="images/header/logo.webp" type="image/webp"><img class="menu-top__img" src="images/header/logo.png" alt="logo"></picture>
+            </a>
+            <nav class="menu-top__nav">
+               <ul class="menu-top__list">
+                  <li class="menu-top__item">
+                     <a class="menu-top__link" href="index.html">Home</a>
+                  </li>
+                  <li class="menu-top__item">
+                     <a class="menu-top__link" href="listing.html">Listing</a>
+                  </li>
+                  <li class="menu-top__item">
+                     <a class="menu-top__link" href="apartment.html">Apartment</a>
+                  </li>
+                  <li class="menu-top__item">
+                     <a class="menu-top__link" href="blog.html">Blog</a>
+                  </li>
+                  <li class="menu-top__item">
+                     <a class="menu-top__link" href="blog-author.html">Author</a>
+                  </li>
+                  <li class="menu-top__item">
+                     <a class="menu-top__link" href="agents.html">Agents</a>
+                  </li>
+               </ul>
+            </nav>
+         </div>
+         <div class="menu-top__location">
+            <span>location:</span> crystal palace,london
+            <a class="menu-top__search" href="#"></a><picture><source srcset="images/header/search.webp" type="image/webp"><img src="images/header/search.png"></picture></img>
+         </div>
+         <div class="menu-top__burger">
+            <span class="menu-top__burger--span"></span>
+            <span class="menu-top__burger--span"></span>
+            <span class="menu-top__burger--span"></span>
+         </div>
+      </div>
+   </div>
+</header>
+   <main>
+      <section class="home">
+         <div class="container">
+            <div class="home__column column-home">
+               <div class="column-home listing">
+                  <div class="listing__top top-listing">
+                     <div class="top-listing__body">
+                        <picture><source srcset="images/listing/map.webp" type="image/webp"><img class="top-listing__map" src="images/listing/map.png" alt="image"></picture>
+                        <div class="top-listing__column">
+                           <ul class="top-listing__list">
+                              <li class="top-listing__item">
+                                 <label class="top-listing__checkbox checkbox-listing">
+                                    <input class="checkbox-listing__input" type="checkbox">
+                                    <span class="checkbox-listing__text"><span>Nearby</span></span>
+                                 </label>
+                              </li>
+                              <li class="top-listing__item">
+                                 <label class="top-listing__checkbox checkbox-listing">
+                                    <input class="checkbox-listing__input" type="checkbox">
+                                    <span class="checkbox-listing__text"><span>Rent</span></span>
+                                 </label>
+                              </li>
+                              <li class="top-listing__item">
+                                 <label class="top-listing__checkbox checkbox-listing">
+                                    <input class="checkbox-listing__input" type="checkbox">
+                                    <span class="checkbox-listing__text"><span>Sale</span></span>
+                                 </label>
+                              </li>
+                              <li class="top-listing__item">
+                                 <label class="top-listing__checkbox checkbox-listing">
+                                    <input class="checkbox-listing__input" type="checkbox">
+                                    <span class="checkbox-listing__text"><span>Office</span></span>
+                                 </label>
+                              </li>
+                              <li class="top-listing__item">
+                                 <label class="top-listing__checkbox checkbox-listing">
+                                    <input class="checkbox-listing__input" type="checkbox">
+                                    <span class="checkbox-listing__text"><span>Apartment</span></span>
+                                 </label>
+                              </li>
+                              <li class="top-listing__item">
+                                 <label class="top-listing__checkbox checkbox-listing">
+                                    <input class="checkbox-listing__input" type="checkbox">
+                                    <span class="checkbox-listing__text"><span>Villa</span></span>
+                                 </label>
+                              </li>
+                              <li class="top-listing__item">
+                                 <label class="top-listing__checkbox checkbox-listing">
+                                    <input class="checkbox-listing__input" type="checkbox">
+                                    <span class="checkbox-listing__text"><span>Flat House</span></span>
+                                 </label>
+                              </li>
+                              <li class="top-listing__item">
+                                 <label class="top-listing__checkbox checkbox-listing">
+                                    <input class="checkbox-listing__input" type="checkbox">
+                                    <span class="checkbox-listing__text"><span>Other</span></span>
+                                 </label>
+                              </li>
+                           </ul>
+                        </div>
+                     </div>
+                  </div>
+                  <div class="listing__offers offers-listing">
+                     <div class="offers-listing__buttoms buttoms-offers">
+                        <div class="buttoms-offers__title">FEATURED PROPERTIES</div>
+                        <div class="buttoms-offers__buttoms">
+                           <button class="buttoms-offers__btn buttoms-offers__btn--sort">SORT BY</button>
+                           <button class="buttoms-offers__btn buttoms-offers__btn--data">DATE NEW TO OLD</button>
+                        </div>
+                     </div>
+                     <div class="offers-listing__items">
+                        <div class="offers-listing__item">
+                           <a class="buttoms-offers__link" href="#">
+                              <picture><source srcset="images/listing/offers/1.webp" type="image/webp"><img class="offers-listing__img" src="images/listing/offers/1.png" alt="image"></picture>
+                           </a>
+                           <div class="offers-listing__info info-listing">
+                              <button class="info-listing__btn">RENT</button>
+                              <div class="info-listing__location">113 Riviera Grande Loop, Riverview, FL</div>
+                              <div class="info-listing__price">$400.000</div>
+                              <div class="info-listing__text">Suspendisse potenti. Sed ut commodo est. Fusce commodo
+                                 ibus porta. Fusce sagittis nibh id purus egestas dictum eros.</div>
+                              <a class="info-listing__derails" href="#">MORE DETAILS</a>
+                              <div class="offers-listing__info info-offers">
+                                 <div class="info-offers__squares">1.400 Sq ft</div>
+                                 <div class="info-offers__bed">3 Bed</div>
+                                 <div class="info-offers__pool">2 Bath</div>
+                                 <div class="info-offers__car">1 Garage</div>
+                                 <button class="info-offers__btn">
+                                    <picture><source srcset="images/home/like.webp" type="image/webp"><img class="info-offers__img" src="images/home/like.png" alt="images"></picture>
+                                 </button>
+                              </div>
+                           </div>
+
+                        </div>
+                        <div class="offers-listing__item">
+                           <a class="buttoms-offers__link" href="#">
+                              <picture><source srcset="images/listing/offers/2.webp" type="image/webp"><img class="offers-listing__img" src="images/listing/offers/2.png" alt="image"></picture>
+                           </a>
+                           <div class="offers-listing__info info-listing">
+                              <button class="info-listing__btn">RENT</button>
+                              <div class="info-listing__location">113 Riviera Grande Loop, Riverview, FL</div>
+                              <div class="info-listing__price">$400.000</div>
+                              <div class="info-listing__text">Suspendisse potenti. Sed ut commodo est. Fusce commodo
+                                 ibus porta. Fusce sagittis nibh id purus egestas dictum eros.</div>
+                              <a class="info-listing__derails" href="#">MORE DETAILS</a>
+                              <div class="offers-listing__info info-offers">
+                                 <div class="info-offers__squares">1.400 Sq ft</div>
+                                 <div class="info-offers__bed">3 Bed</div>
+                                 <div class="info-offers__pool">2 Bath</div>
+                                 <div class="info-offers__car">1 Garage</div>
+                                 <button class="info-offers__btn">
+                                    <picture><source srcset="images/home/like.webp" type="image/webp"><img class="info-offers__img" src="images/home/like.png" alt="images"></picture>
+                                 </button>
+                              </div>
+                           </div>
+                        </div>
+                        <div class="offers-listing__item">
+                           <a class="buttoms-offers__link" href="#">
+                              <picture><source srcset="images/listing/offers/3.webp" type="image/webp"><img class="offers-listing__img" src="images/listing/offers/3.png" alt="image"></picture>
+                           </a>
+                           <div class="offers-listing__info info-listing">
+                              <button class="info-listing__btn">RENT</button>
+                              <div class="info-listing__location">113 Riviera Grande Loop, Riverview, FL</div>
+                              <div class="info-listing__price">$400.000</div>
+                              <div class="info-listing__text">Suspendisse potenti. Sed ut commodo est. Fusce commodo
+                                 ibus porta. Fusce sagittis nibh id purus egestas dictum eros.</div>
+                              <a class="info-listing__derails" href="#">MORE DETAILS</a>
+                              <div class="offers-listing__info info-offers">
+                                 <div class="info-offers__squares">1.400 Sq ft</div>
+                                 <div class="info-offers__bed">3 Bed</div>
+                                 <div class="info-offers__pool">2 Bath</div>
+                                 <div class="info-offers__car">1 Garage</div>
+                                 <button class="info-offers__btn">
+                                    <picture><source srcset="images/home/like.webp" type="image/webp"><img class="info-offers__img" src="images/home/like.png" alt="images"></picture>
+                                 </button>
+                              </div>
+                           </div>
+                        </div>
+                        <div class="offers-listing__item">
+                           <a class="buttoms-offers__link" href="#">
+                              <picture><source srcset="images/listing/offers/4.webp" type="image/webp"><img class="offers-listing__img" src="images/listing/offers/4.png" alt="image"></picture>
+                           </a>
+                           <div class="offers-listing__info info-listing">
+                              <button class="info-listing__btn">RENT</button>
+                              <div class="info-listing__location">113 Riviera Grande Loop, Riverview, FL</div>
+                              <div class="info-listing__price">$400.000</div>
+                              <div class="info-listing__text">Suspendisse potenti. Sed ut commodo est. Fusce commodo
+                                 ibus porta. Fusce sagittis nibh id purus egestas dictum eros.</div>
+                              <a class="info-listing__derails" href="#">MORE DETAILS</a>
+                              <div class="offers-listing__info info-offers">
+                                 <div class="info-offers__squares">1.400 Sq ft</div>
+                                 <div class="info-offers__bed">3 Bed</div>
+                                 <div class="info-offers__pool">2 Bath</div>
+                                 <div class="info-offers__car">1 Garage</div>
+                                 <button class="info-offers__btn">
+                                    <picture><source srcset="images/home/like.webp" type="image/webp"><img class="info-offers__img" src="images/home/like.png" alt="images"></picture>
+                                 </button>
+                              </div>
+                           </div>
+                        </div>
+                        <div class="offers-listing__item">
+                           <a class="buttoms-offers__link" href="#">
+                              <picture><source srcset="images/listing/offers/5.webp" type="image/webp"><img class="offers-listing__img" src="images/listing/offers/5.png" alt="image"></picture>
+                           </a>
+                           <div class="offers-listing__info info-listing">
+                              <button class="info-listing__btn">RENT</button>
+                              <div class="info-listing__location">113 Riviera Grande Loop, Riverview, FL</div>
+                              <div class="info-listing__price">$400.000</div>
+                              <div class="info-listing__text">Suspendisse potenti. Sed ut commodo est. Fusce commodo
+                                 ibus porta. Fusce sagittis nibh id purus egestas dictum eros.</div>
+                              <a class="info-listing__derails" href="#">MORE DETAILS</a>
+                              <div class="offers-listing__info info-offers">
+                                 <div class="info-offers__squares">1.400 Sq ft</div>
+                                 <div class="info-offers__bed">3 Bed</div>
+                                 <div class="info-offers__pool">2 Bath</div>
+                                 <div class="info-offers__car">1 Garage</div>
+                                 <button class="info-offers__btn">
+                                    <picture><source srcset="images/home/like.webp" type="image/webp"><img class="info-offers__img" src="images/home/like.png" alt="images"></picture>
+                                 </button>
+                              </div>
+                           </div>
+                        </div>
+                        <div class="offers-listing__item">
+                           <a class="buttoms-offers__link" href="#">
+                              <picture><source srcset="images/listing/offers/6.webp" type="image/webp"><img class="offers-listing__img" src="images/listing/offers/6.png" alt="image"></picture>
+                           </a>
+                           <div class="offers-listing__info info-listing">
+                              <button class="info-listing__btn">RENT</button>
+                              <div class="info-listing__location">113 Riviera Grande Loop, Riverview, FL</div>
+                              <div class="info-listing__price">$400.000</div>
+                              <div class="info-listing__text">Suspendisse potenti. Sed ut commodo est. Fusce commodo
+                                 ibus porta. Fusce sagittis nibh id purus egestas dictum eros.</div>
+                              <a class="info-listing__derails" href="#">MORE DETAILS</a>
+                              <div class="offers-listing__info info-offers">
+                                 <div class="info-offers__squares">1.400 Sq ft</div>
+                                 <div class="info-offers__bed">3 Bed</div>
+                                 <div class="info-offers__pool">2 Bath</div>
+                                 <div class="info-offers__car">1 Garage</div>
+                                 <button class="info-offers__btn">
+                                    <picture><source srcset="images/home/like.webp" type="image/webp"><img class="info-offers__img" src="images/home/like.png" alt="images"></picture>
+                                 </button>
+                              </div>
+                           </div>
+                        </div>
+
+                     </div>
+                  </div>
+                  <a class="offers__show" href="#">
+                     load more
+                  </a>
+               </div>
+               <aside class="column-home side">
+                  <div class="side__properties properties-side">
+                     <div class="properties-side__title">SEARCH PROPERTIES</div>
+                     <form class="properties-side__search search-properties">
+                        <div class="search-properties__title">location</div>
+                        <input class="search-properties__input" type="text" placeholder="Any location">
+                        <div class="search-properties__title">propeyrt status</div>
+                        <input class="search-properties__input" type="text" placeholder="Status">
+                        <div class="search-properties__title">propeyrt TYPE</div>
+                        <input class="search-properties__input" type="text" placeholder="Type">
+                        <div class="search-properties__title">BEDS</div>
+                        <input class="search-properties__input" type="text" placeholder="No beds">
+                        <div class="search-properties__title">AREA</div>
+                        <div class="search-properties__line">
+                           <input class="search-properties__input" type="text" placeholder="50 mt sq">
+                           <input class="search-properties__input" type="text" placeholder="1.000mt sq">
+                        </div>
+                        <p class="search-properties__slider">
+                           <label class="search-properties__label" for="amount">Price:</label>
+                           <input class="search-properties__input-slider" type="text" id="amount">
+                        </p>
+                        <div class="slider-range" id="slider-range"></div>
+                        <button class="search-properties__btn">
+                           SEARCH
+                        </button>
+                     </form>
+                  </div>
+                  <div class="side__content content-side">
+                     <div class="content-side__title">PROPERTIES NEAR TO YOU <span>► Crystal Palace, Londra</span></div>
+                     <div class="content-side__items">
+                        <a class="content-side__item" href="#">
+                           <picture><source srcset="images/home/aside/1.webp" type="image/webp"><img class="content-side__item-img" src="images/home/aside/1.jpg" alt="image"></picture>
+                           <div class="content-side__item-info">
+                              <div class="content-side__item-title">RENT
+                              </div>
+                              <div class="content-side__item-location">SCOTTS LANE,
+                                 SHORTLANDS, BR2</div>
+                              <div class="content-side__item-price"> £8,000 <span>per week</span></div>
+                           </div>
+                        </a>
+                        <a class="content-side__item" href="#">
+                           <picture><source srcset="images/home/aside/2.webp" type="image/webp"><img class="content-side__item-img" src="images/home/aside/2.jpg" alt="image"></picture>
+                           <div class="content-side__item-info">
+                              <div class="content-side__item-title">
+                                 sale
+                              </div>
+                              <div class="content-side__item-location">BROMLEY ROAD mivas
+                                 BECKENHAM, BR3</div>
+                              <div class="content-side__item-price"> $410.000 </div>
+                           </div>
+                        </a>
+                        <a class="content-side__item" href="#">
+                           <picture><source srcset="images/home/aside/3.webp" type="image/webp"><img class="content-side__item-img" src="images/home/aside/3.jpg" alt="image"></picture>
+                           <div class="content-side__item-info">
+                              <div class="content-side__item-title">
+                                 RENT
+                              </div>
+                              <div class="content-side__item-location">WHITECROFT WAY
+                                 BECKENHAM, BR3</div>
+                              <div class="content-side__item-price"> £12,000 <span>per week</span></div>
+                           </div>
+                        </a>
+                        <a class="content-side__item" href="#">
+                           <picture><source srcset="images/home/aside/4.webp" type="image/webp"><img class="content-side__item-img" src="images/home/aside/4.jpg" alt="image"></picture>
+                           <div class="content-side__item-info">
+                              <div class="content-side__item-title">RENT
+
+                              </div>
+                              <div class="content-side__item-location">ST JAMES' AVENUE
+                                 BECKENHAM, BR3</div>
+                              <div class="content-side__item-price"> £21,000 <span>per week</span></div>
+                           </div>
+                        </a>
+                        <a class="content-side__show" href="#">view all</a>
+                     </div>
+                  </div>
+                  <div class="side__contact side-contact">
+                     <div class="side-contact__title">GET IN TOUCH</div>
+                     <div class="side-contact__info">
+                        <div class="side-contact__location">PO Box 16122 Collins Street
+                           Victoria 8007 Australia</div>
+                        <a class="side-contact__phone" href="tel:61383766284">+61 3 8376 6284</a>
+                        <a class="side-contact__email" href="mailto:info@envato.com">info@envato.com</a>
+                     </div>
+                  </div>
+                  <div class="side__help help-side">
+                     <div class="help-side__title">HELP FOR CUSTOMERS</div>
+                     <nav class="help-side__info">
+                        <ul class="help-side__list">
+                           <li class="help-side__item">
+                              <a class="help-side__link" href="#">Step-by-step buying guide</a>
+                           </li>
+                           <li class="help-side__item">
+                              <a class="help-side__link" href="#">Help to Buy</a>
+                           </li>
+                           <li class="help-side__item">
+                              <a class="help-side__link" href="#">Stamp Duty calculator</a>
+                           </li>
+                           <li class="help-side__item">
+                              <a class="help-side__link" href="#">Mortgages</a>
+                           </li>
+                           <li class="help-side__item">
+                              <a class="help-side__link" href="#">Jargon buster</a>
+                           </li>
+                           <li class="help-side__item">
+                              <a class="help-side__link" href="#">Online portal</a>
+                           </li>
+                           <li class="help-side__item">
+                              <a class="help-side__link" href="#">Buy a home</a>
+                           </li>
+                           <li class="help-side__item">
+                              <a class="help-side__link" href="#">Rentals</a>
+                           </li>
+                        </ul>
+                     </nav>
+                  </div>
+               </aside>
+            </div>
+         </div>
+      </section>
+   </main>
+   <footer class="footer">
+   <div class="container">
+      <div class="footer__column column-footer">
+         <div class="column-footer__content">
+            <div class="column-footer__twitter">
+               <a class="column-footer__twitter-link" href="#">@envato</a>
+               <div class="column-footer__twitter-text">Here's a simple, no nonsense guide to help improve your
+                  networking skills</div>
+            </div>
+            <div class="column-footer__menu">
+               <nav class="menu-footer">
+                  <ul class="menu-footer__list">
+                     <li class="menu-footer__item">
+                        <a class="menu-footer__link" href="#">HOME</a>
+                     </li>
+                     <li class="menu-footer__item">
+                        <a class="menu-footer__link" href="#">BUY</a>
+                     </li>
+                     <li class="menu-footer__item">
+                        <a class="menu-footer__link" href="#">RENT</a>
+                     </li>
+                     <li class="menu-footer__item">
+                        <a class="menu-footer__link" href="#">PROJECTS</a>
+                     </li>
+                     <li class="menu-footer__item">
+                        <a class="menu-footer__link" href="#">FEATURES</a>
+                     </li>
+                     <li class="menu-footer__item">
+                        <a class="menu-footer__link" href="#">GALLERY</a>
+                     </li>
+                     <li class="menu-footer__item">
+                        <a class="menu-footer__link" href="#">ABOUT</a>
+                     </li>
+                     <li class="menu-footer__item">
+                        <a class="menu-footer__link" href="#">CONTACT</a>
+                     </li>
+                  </ul>
+               </nav>
+               <div class="menu-footer__soсial">
+                  <div class="footer-social">
+                     <ul class="footer-social__list">
+                        <li class="footer-social__item">
+                           <a class="footer-social__link" href="#">
+                              <picture><source srcset="images/footer/facebook.webp" type="image/webp"><img class="footer-social__img" src="images/footer/facebook.png"></picture></img>
+                           </a>
+                        </li>
+                        <li class="footer-social__item">
+                           <a class="footer-social__link" href="#">
+                              <picture><source srcset="images/footer/twitter.webp" type="image/webp"><img class="footer-social__img" src="images/footer/twitter.png"></picture></img>
+                           </a>
+                        </li>
+                        <li class="footer-social__item">
+                           <a class="footer-social__link" href="#">
+                              <picture><source srcset="images/footer/instagram.webp" type="image/webp"><img class="footer-social__img" src="images/footer/instagram.png"></picture></img>
+                           </a>
+                        </li>
+                        <li class="footer-social__item">
+                           <a class="footer-social__link" href="#">
+                              <picture><source srcset="images/footer/behance.webp" type="image/webp"><img class="footer-social__img" src="images/footer/behance.png"></picture></img>
+                           </a>
+                        </li>
+                        <li class="footer-social__item">
+                           <a class="footer-social__link" href="#">
+                              <picture><source srcset="images/footer/youtube.webp" type="image/webp"><img class="footer-social__img" src="images/footer/youtube.png"></picture></img>
+                           </a>
+                        </li>
+                     </ul>
+                  </div>
+               </div>
+            </div>
+         </div>
+         <div class="column-footer__copy">
+            <div class="column-footer__search">
+               <div class="footer-social__title">NEWSLETTER</div>
+               <form class="footer-social__form">
+                  <input class="menu-footer__search-input" type="text" placeholder="Email Adress">
+                  <button class="menu-footer__search-btn">
+               </form>
+               <picture><source srcset="images/footer/footer-search.webp" type="image/webp"><img src="images/footer/footer-search.png" alt="icon"></picture>
+               </button>
+            </div>
+            <div class="column-footer__copyrights"> Centrum © 2015. All rights reserved.
+            </div>
+         </div>
+      </div>
+   </div>
+</footer>
+   <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js?_v=20221109231918"></script>
+   <script src="https://code.jquery.com/jquery-1.10.2.js?_v=20221109231918"></script>
+   <script src="https://code.jquery.com/ui/1.10.4/jquery-ui.js?_v=20221109231918"></script>
+   <script src="http://cdn.jsdelivr.net/jquery.mixitup/latest/jquery.mixitup.min.js?_v=20221109231918"></script>
+   <script src="files/mixitup.min.js?_v=20221109231918"></script>
+   <script src="files/listing.js?_v=20221109231918"></script>
+   <script src="js/app.min.js?_v=20221109231918"></script>
+</body>
+
+</html>
